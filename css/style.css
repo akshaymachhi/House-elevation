@@ -41,10 +41,6 @@
     padding: 10px 0;
 }
 
-/* .w-100 {
-    max-height: 90vh;
-} */
-
 .carousel-text-center {
     position: absolute;
     top: 50%;
@@ -71,6 +67,16 @@
 
 }
 
+/* ------------Feature content-------------- */
+
+.feature-cta{
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
 
 /* <!-- -----------------BOD--------------------- --> */
 
@@ -93,22 +99,22 @@
 .bod-title-header {
     margin-bottom: 40px;
 }
+.bod-social-icon a{
+    color: black;
+}
 
 /* <!-- -----------Full width image and text box------------- --> */
 
 .full-width-image-text {
-    background-color: rgb(69, 120, 175);
+    background-color:rgb(74 21 9);
     color: #FFFFFF;
     padding: 40px 30px;
     position: relative;
     bottom: 50px;
+    text-align: center;
 }
 
 /* <!-- -------------Three cards------------- --> */
-
-/* .house-center-text {
-    text-align: center;
-} */
 
 .three-card-icon i {
     font-size: 50px;
@@ -154,8 +160,7 @@
     .carousel-text-center p{
         font-size: 17px;
         line-height: 25px;
-    }
-    
+    } 
 }
 
 @media (max-width:992px) {
