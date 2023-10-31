@@ -12,6 +12,7 @@ img {
 a {
     text-decoration: none;
 }
+
 .section-padding {
     padding: 50px 0;
 }
@@ -25,18 +26,36 @@ a {
     border-radius: 50px;
 }
 
+.cta:hover {
+    background: #36b2e4;
+    color: black;
+    transition: 0.5s;
+}
+
 /* -------------Global H2/P----------- */
 
 h2 {
     font-size: 35px;
     line-height: 40px;
 }
-h3{
-    font-size: 25px;
 
+h3 {
+    font-size: 25px;
 }
+
 p {
     font-size: 16px;
     line-height: 20px;
     padding: 5px 0;
+}
+
+.intro {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.main-title-center {
+    text-align: center;
+    margin-bottom: 40px;
 }

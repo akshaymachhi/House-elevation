@@ -1,10 +1,13 @@
+/* -----------------Navbar--------------- */
 
-.navbar{
+.navbar {
     padding: 25px 0;
 }
-.nav-item{
+
+.nav-item {
     padding: 0 10px;
 }
+
 .nav-after ul li ::after {
     content: '';
     width: 0%;
@@ -14,10 +17,17 @@
     margin: auto;
     transition: 0.5s;
 }
-.nav-after ul li:hover ::after{
+
+.nav-after ul li:hover ::after {
     width: 100%;
 }
+
+.header-title-text {
+    font-weight: 700;
+}
+
 /* ------------Carousel banner------------------- */
+
 .carousel-text-center h1 {
     font-size: 35px;
     color: #FFFFFF;
@@ -31,15 +41,15 @@
     padding: 10px 0;
 }
 
-.w-100 {
-    height: 100vh;
-}
+/* .w-100 {
+    max-height: 90vh;
+} */
 
 .carousel-text-center {
     position: absolute;
     top: 50%;
     left: 50%;
-    bottom: 170px;
+    bottom: auto;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
@@ -53,67 +63,103 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+.carousel-item img {
+    object-fit: inherit;
+    min-height: 50vh;
 
 }
 
-/* <!-- -------------Our offices-------------- --> */
 
-.house-center-text {
+/* <!-- -----------------BOD--------------------- --> */
+
+.bod-member-card {
+    box-shadow: 0 8px 12px 0 rgba(51, 51, 51, 0.4);
+    background-color: #fff;
+    padding: 15px;
     text-align: center;
 }
 
-.icon i {
+.bod-member-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.bi {
+    padding: 0 3px;
+}
+
+.bod-title-header {
+    margin-bottom: 40px;
+}
+
+/* <!-- -----------Full width image and text box------------- --> */
+
+.full-width-image-text {
+    background-color: rgb(69, 120, 175);
+    color: #FFFFFF;
+    padding: 40px 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+/* <!-- -------------Three cards------------- --> */
+
+/* .house-center-text {
+    text-align: center;
+} */
+
+.three-card-icon i {
     font-size: 50px;
 }
 
-.office-address {
+.three-card-main {
     background-color: rgba(0, 0, 0, 0.838);
     color: #FFFFFF;
     text-align: center;
     padding: 30px 10px;
 }
 
-/* <!-- -----------Beautiful Home Front Elevation Ideas------------- --> */
-
-.home-interior-description{
-    background-color:rgb(69, 120, 175);
-    color: #FFFFFF;
-    padding: 40px 30px;
-    position:relative;
-    bottom: 50px;
-
-}
 
 /* <!-- -------------------Footer-------------------------- --> */
-.footer-main{
+.footer-main {
     background-color: rgb(107, 15, 15);
 }
-.footer-details{
+
+.footer-details {
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
-    padding: 30px 20px;    
+    padding: 30px 20px;
 }
-
-
-
-
-
-
-
-
-
 
 /* -------------Responsivness---------------- */
 
 @media (max-width:768px) {
 
-    .service-details {
+    .feature-content-detail {
         padding-top: 20px;
     }
 
-    .office-address {
+    .three-card-main {
         margin-bottom: 20px;
     }
+    .carousel-text-center{
+        width: 80%;
+    }
+    .carousel-text-center h1 {
+        font-size: 30px;
+    }
+    .carousel-text-center p{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    
+}
 
+@media (max-width:992px) {
+    .bod-member-card {
+        margin-bottom: 30px;
+    }
 }
