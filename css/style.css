@@ -140,13 +140,10 @@
     .three-card-main {
         margin-bottom: 20px;
     }
-    .carousel-text-center{
-        width: 80%;
-    }
-    .carousel-text-center h1 {
+    .image-content h1 {
         font-size: 30px;
     }
-    .carousel-text-center p{
+    .image-content p{
         font-size: 17px;
         line-height: 25px;
     } 
