@@ -1,3 +1,5 @@
+@import "./global.css";
+
 /* -----------------Navbar--------------- */
 
 .navbar {
@@ -38,32 +40,37 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .banner-image img {
     object-fit: inherit;
-    min-height:50vh;
+    min-height: 50vh;
 }
-.image-content{
+
+.image-content {
     z-index: 2;
 }
 
-.slider-main{
+.slider-main {
     padding: 0;
 }
-.slick-banner{
+
+.slick-banner {
     overflow: hidden;
 }
 
-.image-content{
+.image-content {
     position: absolute;
     color: var(--color-white);
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.slick-dots{
+
+.slick-dots {
     bottom: 10px !important;
 }
-.slick-dots li button:before{
+
+.slick-dots li button:before {
     color: var(--color-white) !important;
 }
 
@@ -71,7 +78,7 @@
 
 .bod-member-card {
     box-shadow: 0 8px 12px 0 rgba(51, 51, 51, 0.4);
-    background-color: var(--color-white);;
+    background-color: var(--color-white);
     padding: 15px;
     text-align: center;
 }
@@ -88,14 +95,15 @@
 .bod-title-header {
     margin-bottom: 40px;
 }
-.bod-social-icon a{
+
+.bod-social-icon a {
     color: var(--color-black);
 }
 
 /* <!-- -----------Full width image and text box------------- --> */
 
 .full-width-image-text {
-    background-color:var(--color-brown);
+    background-color: var(--color-brown);
     color: var(--color-white);
     padding: 40px 30px;
     position: relative;
@@ -117,8 +125,9 @@
 }
 
 /* <!-- -------------------Footer-------------------------- --> */
+
 .footer-main {
-    background-color: var(--color-brown);;
+    background-color: var(--color-brown);
 }
 
 .footer-details {
@@ -139,13 +148,19 @@
     .three-card-main {
         margin-bottom: 20px;
     }
+
     .image-content h1 {
         font-size: 30px;
     }
-    .image-content p{
+
+    .image-content p {
         font-size: 17px;
         line-height: 25px;
-    } 
+    }
+
+    .cta {
+        padding: 8px 18px;
+    }
 }
 
 @media (max-width:992px) {

@@ -32,11 +32,9 @@ a {
 
 .cta {
     border: 2px solid var(--color-white);
-    ;
     padding: 10px 20px;
     cursor: pointer;
     color: var(--color-white);
-    ;
     font-size: 18px;
     font-weight: 500;
 }
@@ -96,7 +94,7 @@ a {
     right: 0;
 }
 
-/* -------------Global H2/P----------- */ 
+/* -------------Global H2/P----------- */
 
 h2 {
     font-size: 35px;
