@@ -63,7 +63,6 @@ a {
     right: 0;
 }
 
-
 /* --------Black border CTA------- */
 
 .feature-cta {
@@ -73,7 +72,6 @@ a {
     font-size: 18px;
     font-weight: 500;
     transition: 0.5s;
-
 }
 
 .feature-cta span {
@@ -98,7 +96,8 @@ a {
     right: 0;
 }
 
--------------Global H2/P----------- */ h2 {
+-------------Global H2/P----------- */ 
+h2 {
     font-size: 35px;
     line-height: 40px;
 }
