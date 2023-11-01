@@ -161,6 +161,9 @@
     .cta {
         padding: 8px 18px;
     }
+    .feature-cta{
+        padding: 8px 18px;
+    }
 }
 
 @media (max-width:992px) {
