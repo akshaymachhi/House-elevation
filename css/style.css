@@ -12,7 +12,7 @@
     content: '';
     width: 0%;
     height: 3px;
-    background-color: rgb(59, 84, 207);
+    background-color: var(--color-blue);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -27,30 +27,27 @@
 }
 
 /* ------------Carousel banner------------------- */
-
-.carousel-text-center h1 {
-    font-size: 35px;
-    color: #FFFFFF;
-    line-height: 35px;
+.slider-main{
+    padding: 0;
+}
+.slick-banner{
+    overflow: hidden;
 }
 
-.carousel-text-center p {
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 10px 0;
-}
-
-.carousel-text-center {
+.image-content{
     position: absolute;
-    top: 50%;
+    color: #fff;
     left: 50%;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-
-.carousel-inner::before {
+.slick-dots{
+    bottom: 10px !important;
+}
+.slick-dots li button:before{
+    color: #fff !important;
+}
+.image-main::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -61,28 +58,20 @@
     z-index: 1;
 }
 
-.carousel-item img {
+.banner-image img {
     object-fit: inherit;
-    min-height: 50vh;
-
+    min-height:50vh;
+}
+.image-content{
+    text-align: center;
+    z-index: 2;
 }
 
-/* ------------Feature content-------------- */
-
-.feature-cta{
-    border: 2px solid black;
-    color: black;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 500;
-
-}
-
-/* <!-- -----------------BOD--------------------- --> */
+/* <!-------------------BOD--------------------- --> */
 
 .bod-member-card {
     box-shadow: 0 8px 12px 0 rgba(51, 51, 51, 0.4);
-    background-color: #fff;
+    background-color: var(--color-white);;
     padding: 15px;
     text-align: center;
 }
@@ -100,14 +89,14 @@
     margin-bottom: 40px;
 }
 .bod-social-icon a{
-    color: black;
+    color: var(--color-black);
 }
 
 /* <!-- -----------Full width image and text box------------- --> */
 
 .full-width-image-text {
-    background-color:rgb(74 21 9);
-    color: #FFFFFF;
+    background-color:var(--color-brown);
+    color: var(--color-white);
     padding: 40px 30px;
     position: relative;
     bottom: 50px;
@@ -121,21 +110,20 @@
 }
 
 .three-card-main {
-    background-color: rgba(0, 0, 0, 0.838);
-    color: #FFFFFF;
+    background-color: var(--color-black);
+    color: var(--color-white);
     text-align: center;
     padding: 30px 10px;
 }
 
-
 /* <!-- -------------------Footer-------------------------- --> */
 .footer-main {
-    background-color: rgb(107, 15, 15);
+    background-color: var(--color-brown);;
 }
 
 .footer-details {
     display: flex;
-    color: #FFFFFF;
+    color: var(--color-white);
     justify-content: space-between;
     padding: 30px 20px;
 }

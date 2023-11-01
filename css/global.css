@@ -5,6 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-blue: rgb(59, 84, 207);
+    --color-brown: rgb(74 21 9);
+}
+
 img {
     width: 100%;
 }
@@ -19,27 +26,79 @@ a {
 
 /* ----------Globel CTA-------- */
 
-.button-cta{
-    margin-top:20px;
+.button-cta {
+    margin-top: 20px;
 }
-.cta{
-    border: 2px solid white;
+
+.cta {
+    border: 2px solid var(--color-white);
+    ;
     padding: 10px 20px;
     cursor: pointer;
-    color: white;
+    color: var(--color-white);
+    ;
     font-size: 18px;
     font-weight: 500;
 }
-.cta i{
-    transition:0.5s ease-in-out;
-}
-.cta:hover i{
-    padding-left:10px;
+
+.cta span {
+    position: relative;
+    transition: 0.5s;
 }
 
-/* -------------Global H2/P----------- */
+.cta span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
 
-h2 {
+.cta:hover span {
+    padding-right: 25px;
+}
+
+.cta:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* --------Black border CTA------- */
+
+.feature-cta {
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+.feature-cta span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.feature-cta span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.feature-cta:hover span {
+    padding-right: 25px;
+}
+
+.feature-cta:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+-------------Global H2/P----------- */ h2 {
     font-size: 35px;
     line-height: 40px;
 }
